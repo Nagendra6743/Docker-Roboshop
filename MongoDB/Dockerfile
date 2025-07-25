@@ -1,5 +1,5 @@
 FROM mongo:7.0
-COPY master-data.js /docker-entrypoint-initdb.d
+COPY master-data.js /docker-entrypoint-initdb.d/
 
 #This variable allows you to specify the name of a database to be used for creation scripts in 
 #/docker-entrypoint-initdb.d/*.js (see Initializing a fresh instance below). 
